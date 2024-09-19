@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img-content{
+    display: flex;
+}
+
+.img-content img{
+    width: 100%;
+}
+/* Estilos generales */
+
+header {
+    background-color: #222B36;
+    padding: 8px 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;  /* Alinear verticalmente en el centro */
+    justify-content: space-between;  /* Espaciar logo y lista de botones */
+    padding: 10px;  /* Ajusta el padding a tus necesidades */
+  }
+
+/*Etilo para el header*/
+
+#logo-hc{
+    width: 200px;
+}
+/* Estilos para el logo */
+
+/* Estilos para quitar los puntos de las listas y hacerlas horizontales */
+.nav-buttons {
+    list-style-type: none;  /* Eliminar los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Mostrar los elementos en línea */
+    justify-content: space-around;  /* Espaciado equitativo entre botones */
+  }
+
+
+
+  /* Estilo para los elementos de la lista (botones) */
+.nav-buttons li {
+    margin: 0 10px;
+  }
+
+  /* Estilos para los enlaces (botones) */
+.nav-buttons li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #222B36;  /* Color de fondo por defecto */
+    color: #fefefe;  /* Color del texto */
+    text-decoration: none;  /* Quitar el subrayado */
+    border-radius: 4px;  /* Bordes redondeados */
+    transition: background-color 0.8s ease;  /* Transición suave para el hover */
+    font-size: 18px;  /* Cambia este valor para aumentar el tamaño de la fuente */
+  }
+
+  /* Cambiar el color cuando se hace hover */
+.nav-buttons li a:hover {
+    background-color: #3A6E8A;  /* Cambiar el color al hacer hover */
+    color: #fefefe;  /* Cambiar el color del texto al blanco */
+  }
+
