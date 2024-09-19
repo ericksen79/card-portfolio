@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Hay Cultura Portfolio HTML & CSS</title>
 </head>
+
+<script>
+    function redirigir() {
+      window.location.href = "https://hay-cultura.super.site/";
+    }
+  </script>
+
 <body>
     <header>
         <nav class="navbar">
@@ -28,7 +35,8 @@
         <div class="info-content">
             <h1>Descubre el potencial de tus ideas</h1>
             <h3>Ten las mejores recomendaciones para productos que te ayuden a mejorar tus viajes o lugar de destino</h3>
-            <button class="cta">Descubre más</button>
+            <button class="cta" onclick="redirigir()">Descubre más</button>
+
         </div>
 
         <div class="img-content" id="hero-img">
@@ -39,7 +47,7 @@
 
     <main>
 
-        <div>
+        <div class="img-content">
             <img src="img/main-img.png" alt="Modelado 3D Hollownigth">
         </div>
 
