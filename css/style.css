@@ -70,3 +70,210 @@ header {
     color: #fefefe;  /* Cambiar el color del texto al blanco */
   }
 
+/* hero style */
+
+/* Estilo general para centrar el contenido del hero */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 40px;
+  background-color: #F5FBFF;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Estilo para el contenido de texto */
+.info-content h1 {
+  font-size: 42px;
+  font-weight: bold;  /* Sin tipografía bold */
+  margin-bottom: 24px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.info-content h3 {
+  font-size: 24px;
+  font-weight: normal;  /* Sin tipografía bold */
+  margin-bottom: 30px;
+  font-family: 'Arial Narrow';
+}
+
+/* Estilo del botón */
+.cta {
+  padding: 10px 20px;
+  background-color: #3A6E8A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #1e5a7a;
+}
+
+/* Estilo para la imagen */
+.img-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+  .info-content {
+    max-width: 50%;
+  }
+
+  .img-content {
+    max-width: 50%;
+  }
+}
+
+/* General layout for the main section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #2A3535;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Style for the image */
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  main div:first-child {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  main div:nth-child(2) {
+    flex: 1;
+    padding-left: 20px;
+  }
+}
+
+/* Header and paragraph styling */
+main h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #F5FBFF;
+}
+
+main p {
+  font-size: 24px;
+  font-weight: normal;  /* Sin tipografía bold */
+  font-family: 'Arial Narrow';
+  margin-bottom: 40px;
+  color: #F5FBFF;
+}
+
+/* Style for the services icons */
+.services-icons p{
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium';
+  position: center;
+  padding: 8px;
+  font-size: 24px;
+}
+
+ul.services-icons {
+  list-style: none;  /* Remove bullet points */
+  padding: 0;
+  display: flex;
+  flex-direction: column;  /* Arrange items in a vertical column */
+  gap: 20px;
+}
+
+/* Style for each list item */
+.services-icons li {
+  display: flex;
+  align-items: center;  /* Align text with the icons */
+}
+
+/* Style for the icons */
+.services-icons img {
+  width: 50px;  /* Icon size */
+  margin-right: 20px;  /* Space between icon and text */
+  height: auto;
+}
+
+/* Hover effect for the links */
+.services-icons a:hover {
+  color: #007bff;
+}
+
+.services-icons a:hover img {
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+
+/* Link styling */
+.services-icons a {
+  text-decoration: none;  /* Remove underline */
+  display: flex;
+  align-items: left;
+  font-size: 24px;
+  color: black;  /* Adjust color as needed */
+}
+
+footer {
+  background-color: #131818;
+  padding: 16px;
+}
+
+/* General layout for social icons */
+footer ul.social-icons {
+  list-style: none;  /* Remove bullet points */
+  padding: 0;
+  display: flex;  /* Flexbox for horizontal alignment */
+  justify-content: center;  /* Center align the icons */
+  gap: 20px;  /* Space between each icon */
+}
+
+/* Style for each list item */
+.social-icons li {
+  display: inline-block;
+}
+
+/* Style for the social icon links */
+.social-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;  /* Smooth transition */
+}
+
+/* Style for the social icons (images) */
+.social-icons img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  transform: scale(1.3);  /* Increase size by 1.3 on hover */
+  background-color: #2A3535;  /* Change background color on hover */
+  border-radius: 8%;  /* Make the background color into a circle */
+}
