@@ -81,8 +81,6 @@ header {
   justify-content: center;
   text-align: left;
   padding: 40px;
-  margin-left: 32px;
-  margin-right: 32px;
   background-color: #F5FBFF;
 }
 
@@ -94,8 +92,10 @@ header {
 }
 
 /* Estilo para el contenido de texto */
+
 .info-content h1 {
-  font-size: 42px;
+  font-size: 400%;
+  width: 100%;
   font-weight: bold;  /* Sin tipografía bold */
   margin-bottom: 24px;
   font-family: 'Franklin Gothic Medium';
@@ -104,6 +104,7 @@ header {
 .info-content h3 {
   font-size: 24px;
   font-weight: normal;  /* Sin tipografía bold */
+  width: 100%;
   margin-bottom: 30px;
   font-family: 'Arial Narrow';
 }
@@ -127,6 +128,9 @@ header {
 /* Estilo para la imagen */
 .img-content img {
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   height: auto;
 }
 
@@ -160,8 +164,11 @@ main {
 
 /* Style for the image */
 main img {
-  max-width: 100%;
+  width: 50%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 @media (min-width: 768px) {
@@ -235,7 +242,7 @@ ul.services-icons {
 .services-icons a {
   text-decoration: none;  /* Remove underline */
   display: flex;
-  align-items: left;
+  align-items: center;
   font-size: 24px;
   color: black;  /* Adjust color as needed */
 }
